@@ -6,8 +6,7 @@ app.use(express.static('./public'))
 
 
 app.get('/' , (req, res) => {
-    const dir = path.join(__dirname, 'public/index.html')
-    res.sendFile(dir)
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
 
